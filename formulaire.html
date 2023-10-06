@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--divinectorweb.com-->
+<head>
+	<title>Inscription application</title>
+    <link rel="stylesheet" href="bootstrap.css">
+	<link href="bootstrap-icons.css" rel="stylesheet">
+	<link href="css.css" rel="stylesheet">
+    <style type="text/css">
+    .Style1 {
+        font-size: 36px;
+        font-weight: bold;
+        color: #000000;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .hide{display: none;}
+        </style>
+</head>
+<body >
+    
+<nav class="navbar shadow navbar-expand-lg navbar-light bg-light mb-4">
+        <div class="container">
+            <a class="navbar-brand text-wrap" href="#"> BIENVENUE DANS L APPLICATION DE GESTION DES TRAMSPORT</a> 
+        <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://">Site TRAMSPORT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="help.html">Aide</a>
+                    </li>
+
+            <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Langue</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="formulaire.html">Français</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="formulaire1.html">Anglais</a></li>
+                      </ul>
+                   </li>
+                  <!-- <li class="nav-item">
+                      <a class="nav-link" href="index.php#portfolio">connexion</a>
+                  </li> -->
+              </ul>
+          </div>
+      </div>
+  </nav>
+  <div class="container shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+    <div class="row">
+    <div class="col-sm-3 mb-3"></div>
+    <div class="col-sm-6" style="margin: 10px 10px 10px 10px;" >
+        <h1 class="text-center">Tramsport connexion</h1>
+        <div class="progressbar">
+            <div class="progress" id="progress"></div>
+            <div class="progress-step progress-step-active" data-title=" "></div>
+            <div class="progress-step" data-title=" "></div>
+            <div class="progress-step" data-title=" "></div>
+        </div>
+        <form method="POST" id="Formulaire" name="Formulaire" enctype="multipart/form-data">
+        <input type="hidden" value="fr" name='lang' id='lang'>
+        <!-- // -------------------------------------------------------------------------------------------------------------------->
+        <div class="page111 form-step form-step-active">
+            <div class="mb-3">
+            <h5><b>utilisez votre compte pour vous connecte</b></h5>
+            
+                <div class="row">
+                <div class="mb-3">
+                    <label class="form-label">Nom<font color='red'>*</font> :</label>
+                    <input type="text" class="form-control" name="nom" id="nom" value="" placeholder="Votre Nom d'utilisateur" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">password<font color='red'>*</font> :</label>
+                    <input type="password" class="form-control" name="password" id="password" value="" placeholder="Votre mots de passe" required>
+                </div>
+            </div>
+            <div class="mb-3">
+                <!--  <button type="button" class="btn btn-primary btnn-next">créer un compte</button>----->
+                <li><a class="next-page" >créer un compte</a></li>
+            </div>
+            <div class="mb-3">
+                    <button type="button" class="btn btn-primary btnn-next">Suivant</button>
+            </div>
+            
+        </div>
+        </div>
+        <!-- // -------------------------------------------------------------------------------------------------------------------->
+        <div class="page111 form-step">
+            <div class="mb-3">
+               <h5><b>INFORMATIONS PERSONELLES</b></h5>
+               <div class="row">
+                  <div class="mb-3">
+                     <label class="form-label">Nom d'utilisateur<font color='red'>*</font> :</label>
+                     <input type="text" class="form-control" name="nom" id="nom" value="" placeholder="Votre Nom d utilisateur" required>
+                  </div>
+               </div>
+            </div>
+
+            <div class="mb-3">
+               <div class="row">
+                  <div class="mb-3">
+                     <label class="form-label">Email<font color='red'>*</font> :</label>
+                     <input type="email"  class="form-control" name="email" id="email" value="" placeholder="entre votre email" required>
+                  </div>
+                  <div class="mb-3">
+                     <label class="form-label">password<font color='red'>*</font> :</label>
+                     <input type="password" class="form-control" name="password" value="" placeholder="entre le mot de passe" required>
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">password<font color='red'>*</font> :</label>
+                    <input type="password" class="form-control" name="confirme password" value="" placeholder="resaisir le mot de passe" required>
+                 </div>
+                 <div class="mb-3">
+                    <label class="form-label">Tél<font color='red'>*</font> :</label>
+                    <input type="tel" class="form-control" name="tel" id="tel" placeholder="xxxxxxxxx" required>
+                </div>
+               </div>
+            </div>
+            <div class="mb-3">
+               <div class="row">
+                  <div class="col-md-6">
+                     <label class="form-label">statut usage<font color='red'>*</font> :</label>
+                     <select class="form-select" name="statut" id="inputGroupSelect01" required>
+                     <option value="">Choisir...</option>
+                        <option value="pieton">pieton</option>
+                        <option value="vehiculer">vehiculer</option>
+                     </select>
+                  </div>
+               </div>
+            </div>
+            <div class="mb-3">
+                     <button type="button" class="btn btn-primary btnn-prev">Précédent</button>
+                     <button type="button" class="btn btn-primary btnn-next">Suivant</button>
+                  </div>
+               </div>
+     </div>
+    <script src="script.js"></script>
+</div>
+</html>
